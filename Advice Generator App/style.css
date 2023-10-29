@@ -1,0 +1,66 @@
+@font-face {
+  font-family: Manrope;
+  src: url("./fonts/Manrope-VariableFont_wght.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: Manrope;
+  background-color: hsl(218, 23%, 16%);
+  box-sizing: border-box;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 40px 32px;
+  color: hsl(193, 38%, 86%);
+  background-color: hsl(217, 19%, 24%);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  height: 40vh;
+  width: 40vw;
+  max-width: 500px;
+  border-radius: 10px;
+}
+
+.advice-header {
+  color: hsl(150, 100%, 66%);
+}
+
+.advice-text {
+  padding-left: 32px;
+  padding-right: 32px;
+  font-weight: 800;
+  font-size: 24px;
+  text-align: center;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.advice-button {
+  position: absolute;
+  bottom: 0;
+  transform: translate(0, 50%);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  cursor: pointer;
+}
+
+.advice-button:hover {
+  box-shadow: 0 0 16px hsl(150, 100%, 66%);
+}
+
+.advice-button > img {
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, 50%);
+}
