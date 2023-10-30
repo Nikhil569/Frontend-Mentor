@@ -18,7 +18,13 @@
       <div class="advice-header">ADVICE</div>
       <div class="advice-text"></div>
       <div class="advice-divider">
-        <img src="./images/pattern-divider-desktop.svg" />
+        <picture>
+          <source
+            srcset="./images/pattern-divider-desktop.svg"
+            media="(min-width:800px)"
+          />
+          <img src="./images/pattern-divider-mobile.svg" />
+        </picture>
       </div>
       <div class="advice-button">
         <img src="./images/icon-dice.svg" />
