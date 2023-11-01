@@ -16,8 +16,11 @@ const isp = document
 let map;
 
 btn.addEventListener("click", async () => {
-  let res = await fetch();
+  let api = await fetch("./netlify/functions/index.mjs");
 
+  let res = await fetch(
+    `https://geo.ipify.org/api/v2/country,city?apiKey=${api}&ipAddress=${ip.value}`
+  );
   let data = await res.json();
 
   console.log(data);
