@@ -1,3 +1,5 @@
+import api from "config.js";
+
 const btn = document.getElementsByClassName("ip-search-button")[0];
 const ip = document.getElementsByTagName("input")[0];
 const ipLoc = document
@@ -16,19 +18,11 @@ const isp = document
 let map;
 
 btn.addEventListener("click", async () => {
-  let apiRes = await fetch(
-    "https://ip-address-tracker-15.netlify.app/netlify/functions/index.mjs"
-  );
-  let api = await apiRes.json();
-
-  console.log(api);
-
   let res = await fetch(
     `https://geo.ipify.org/api/v2/country,city?apiKey=${api}&ipAddress=${ip.value}`
   );
   let data = await res.json();
 
-  console.log(data);
   let lat = data.location.lat;
   let lng = data.location.lng;
 
