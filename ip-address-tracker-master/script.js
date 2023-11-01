@@ -1,4 +1,4 @@
-import api from "config.js";
+import api from "./config.js";
 
 const btn = document.getElementsByClassName("ip-search-button")[0];
 const ip = document.getElementsByTagName("input")[0];
