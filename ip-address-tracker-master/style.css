@@ -80,14 +80,15 @@ nav > h1 {
   background-color: white;
   border-radius: 10px;
   height: 20vh;
-  width: 60vw;
+  width: 50vw;
   z-index: 3;
 }
 
-.ip-address-details > div:nth-child(even) {
+/* .ip-address-details > div:nth-child(even) {
   border: 1px solid var(--color-dark-gray);
   height: 60%;
-}
+  margin: 0 20px;
+} */
 
 .ip-address-details h6 {
   margin: 0;
@@ -101,4 +102,25 @@ nav > h1 {
 #map {
   height: 100%;
   z-index: 1;
+}
+
+@media (max-width: 1440px) and (min-width: 360px) {
+  nav > h1 {
+    font-size: 20px;
+  }
+
+  .input {
+    top: 20%;
+  }
+
+  .ip-address-details {
+    flex-direction: column;
+    height: 30vh;
+    align-items: baseline;
+    padding: 40px;
+  }
+
+  .ip-address-details h3 {
+    margin: 10px 0;
+  }
 }
