@@ -16,9 +16,11 @@ const isp = document
 let map;
 
 btn.addEventListener("click", async () => {
-  let api = await fetch(
+  let apiRes = await fetch(
     "https://ip-address-tracker-15.netlify.app/netlify/functions/index.mjs"
   );
+  let api = await apiRes.json();
+
   console.log(api);
 
   let res = await fetch(
