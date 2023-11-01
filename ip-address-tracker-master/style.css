@@ -84,11 +84,11 @@ nav > h1 {
   z-index: 3;
 }
 
-/* .ip-address-details > div:nth-child(even) {
+.ip-address-details > div:nth-child(even) {
   border: 1px solid var(--color-dark-gray);
   height: 60%;
   margin: 0 20px;
-} */
+}
 
 .ip-address-details h6 {
   margin: 0;
